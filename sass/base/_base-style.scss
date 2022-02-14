@@ -1,0 +1,47 @@
+.color-accent {
+  color: $color-accent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 94px 0;
+  background-color: $color-white;
+
+  &--no-padding-top {
+    padding-top: 0;
+  }
+
+  &--bg-dark {
+    background-color: $color-button-light;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $color-dark;
+  }
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+
+  color: $color-text-primary;
+}
