@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="goIT home work markup 02" />
+    <meta name="description" content="goIT home work markup 08" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,14 +18,14 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
   </head>
 
   <body>
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="main-navigation">
-          <a class="logo" href="./index.html"><span class="logo__color-accent">Web</span>Studio</a>
+          <a class="logo" href="./index.html"><span class="logo--color-accent">Web</span>Studio</a>
 
           <ul class="main-navigation__list">
             <li class="main-navigation__item main-navigation__link--current">
@@ -64,62 +64,60 @@
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="hero__container">
           <h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title visually-hidden">Наши качества</h2>
-          <ul class="features">
-            <li class="features__item">
-              <div class="features__thumb">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="features__title">Внимание к деталям</h3>
-              <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__thumb">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="features__title">Пунктуальность</h3>
-              <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__thumb">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="features__title">Планирование</h3>
-              <p class="features__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__thumb">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="features__title">Современные технологии</h3>
-              <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
+      <section class="section section__featers">
+        <h2 class="section__title visually-hidden">Наши качества</h2>
+        <ul class="features">
+          <li class="features__item">
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Внимание к деталям</h3>
+            <p class="features__text">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Пунктуальность</h3>
+            <p class="features__text">
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Планирование</h3>
+            <p class="features__text">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__thumb">
+              <svg class="features__icon" width="70" height="70">
+                <use href="./images/icons.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Современные технологии</h3>
+            <p class="features__text">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section class="section section--no-padding-top">
@@ -365,7 +363,7 @@
       <div class="container footer-container">
         <div class="panel-contacts">
           <a class="logo logo--theme-dark" href="./index.html"
-            ><span class="logo__color-accent">Web</span>Studio
+            ><span class="logo--color-accent">Web</span>Studio
           </a>
 
           <address>

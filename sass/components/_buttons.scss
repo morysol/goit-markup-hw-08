@@ -1,53 +1,23 @@
-.hero__button {
-  display: inline-block;
+.button {
+  display: block;
 
-  padding: 10px 32px;
   width: 200px;
   height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875%;
-
-  letter-spacing: 0.06em;
 
   color: $color-white;
-  background-color: $color-accent;
-
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  &:hover,
-  &:focus {
-    color: $color-white;
-    background-color: $color-accent;
-  }
-}
-
-.submit-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 200px;
-  height: 50px;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875%;
+  line-height: 1.87;
 
   letter-spacing: 0.06em;
-
-  margin-left: auto;
-  margin-right: auto;
 
   background: $color-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: transparent;
-  color: $color-white;
 }
 
-.submit-icon {
-  margin-left: 12px;
+.hero__button {
+  // text-align: center;
+  margin: 0 auto;
 }

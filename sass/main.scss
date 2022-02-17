@@ -6,30 +6,36 @@
 @import './base/reset';
 @import './base/base-style';
 
-// tools
-@import './utils/visually-hidden';
+// components
 
 // common
 @import './components/buttons';
+
 @import './components/logo';
-@import './components/nav';
-@import './components/contacts';
+// @import './components/nav';
+// @import './components/contacts';
+
 @import './components/header';
-@import './components/footer';
-@import './components/social';
-@import './components/backdrop';
+// @import './components/footer';
+// @import './components/social';
+// @import './components/backdrop';
 
 // sections
+
 @import './components/hero';
 @import './components/featers';
-@import './components/business';
-@import './components/team';
-@import './components/clients';
+// @import './components/business';
+// @import './components/team';
+// @import './components/clients';
 
 /* ----------------- page portfolio */
-@import './components/navigation-bar';
-@import './components/portfolio';
+// @import './components/navigation-bar';
+// @import './components/portfolio';
 
-// @import './components/logo';
-// @import './components/logo';
-// @import './components/logo';
+// -----------------------
+//  480px, 768px и 1200px
+// @media screen and (min-width: 480px) {
+//   .page-header {
+//     height: 60px;
+//   }
+// }

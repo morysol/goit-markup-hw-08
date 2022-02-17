@@ -1,11 +1,6 @@
 .page-header {
-  height: 80px;
-  border-bottom: 1px solid #ececec;
-}
-
-.page-header__container {
-  display: flex;
-  align-items: stretch;
-
-  height: 100%;
+  @media screen and (max-width: 480px) {
+    // height: 60px;
+    outline: 2px solid magenta;
+  }
 }

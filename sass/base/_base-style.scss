@@ -1,6 +1,6 @@
-.color-accent {
-  color: $color-accent;
-}
+// .color-accent {
+//   color: $color-accent;
+// }
 
 img {
   display: block;
@@ -9,32 +9,31 @@ img {
 }
 
 .section {
-  padding: 94px 0;
   background-color: $color-white;
-
-  &--no-padding-top {
-    padding-top: 0;
-  }
 
   &--bg-dark {
     background-color: $color-button-light;
   }
-
-  &__title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $color-dark;
-  }
 }
+
+// .section--padding-top {
+//   padding-top: 60px;
+// }
+
+.section__title {
+  // margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-dark;
+}
+
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
