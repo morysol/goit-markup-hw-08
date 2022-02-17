@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  margin: 14px;
+}
+.clients__link {
+  color: $color-social-links;
+
+  border: 1px solid $color-social-links;
+  border-radius: 4px;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    border-color: $color-accent;
+    //   color: $color-white;
+    //   background-color: $color-accent;
+  }
+
+  .clients__icon {
+    fill: currentColor;
+  }
+}

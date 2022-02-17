@@ -9,19 +9,20 @@ img {
 }
 
 .section {
+  padding: 60px 15px;
   background-color: $color-white;
 
   &--bg-dark {
     background-color: $color-button-light;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
-// .section--padding-top {
-//   padding-top: 60px;
-// }
-
 .section__title {
-  // margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 36px;
