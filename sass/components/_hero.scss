@@ -1,36 +1,22 @@
 .hero {
-  // @media screen and (max-width: 480px) {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
-  // width: 480px;
-  // height: 400px;
-
-  // }
-
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../../images/Header@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  .hero__container {
-    // padding: 118px 60px 0;
-    // margin: 0 auto;
-  }
+}
 
-  // hero__header
-  .hero__header {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
+// hero__header
+.hero__header {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
 
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    color: $color-white;
+  color: $color-white;
 
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
