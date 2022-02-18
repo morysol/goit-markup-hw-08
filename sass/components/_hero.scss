@@ -1,20 +1,21 @@
 .hero {
-  @media screen and (max-width: 480px) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+  // @media screen and (max-width: 480px) {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
-    // width: 480px;
-    // height: 400px;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/Header@1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  // width: 480px;
+  // height: 400px;
 
+  // }
+
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/Header@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .hero__container {
-    padding: 118px 60px 0;
+    // padding: 118px 60px 0;
     // margin: 0 auto;
   }
 
@@ -32,6 +33,4 @@
 
     margin-bottom: 30px;
   }
-
-  // hero__button
 }
