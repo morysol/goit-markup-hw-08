@@ -9,7 +9,6 @@ img {
 }
 
 .section {
-  padding: 60px 15px;
   background-color: $color-white;
 
   &--bg-dark {
@@ -35,6 +34,7 @@ img {
 }
 
 .container {
+  // padding: 60px 15px;
   margin: 0 auto;
   padding: 0 15px;
 }
