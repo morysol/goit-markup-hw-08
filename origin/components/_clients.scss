@@ -1,17 +1,15 @@
+// ---------------  clients
 .clients {
   display: flex;
-
-  flex-wrap: wrap;
-  margin: -15px;
 }
 
 .clients__item {
+  width: 170px;
   height: 92px;
-  // flex-basis: calc((100% - 60px) / 2);
-  flex-basis: calc((480px - 60px) / 2);
 
-  // flex-basis: calc((100% - 30px) / 3);
-  margin: 15px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
@@ -23,19 +21,19 @@
   height: 100%;
 
   color: $color-social-links;
-
   border: 1px solid $color-social-links;
   border-radius: 4px;
+  transition: color 250ms $function-time, border-color 250ms $function-time;
 
   &:hover,
   &:focus {
     color: $color-accent;
-    border-color: $color-accent;
-    //   color: $color-white;
-    //   background-color: $color-accent;
+    border: 1px solid $color-accent;
   }
+}
 
-  .clients__icon {
-    fill: currentColor;
-  }
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }

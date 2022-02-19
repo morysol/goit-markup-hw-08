@@ -1,0 +1,229 @@
+/* --------  Modal,   backdrop ------- */
+
+.backdrop {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms $function-time;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-container {
+  position: absolute;
+
+  width: 528px;
+  height: 581px;
+
+  left: 50%;
+  top: 50%;
+  padding: 40px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1, 1);
+
+  background-color: $color-white;
+  transition: transform 250ms $function-time;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(45deg);
+  }
+}
+
+// see _buttons.scss
+.modal-container__close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  color: $color-black;
+  background-color: $color-white;
+
+  cursor: pointer;
+  transition: color 250ms $function-time;
+}
+
+.modal-container__close-icon {
+  fill: currentColor;
+  transition: fill 250ms $function-time;
+
+  .modal-container__close-button:hover & {
+    fill: $color-accent;
+  }
+}
+
+.input-field {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.agree-container {
+  position: relative;
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-info__title {
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-dark;
+}
+
+.client-info__label {
+  width: 100%;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.client-info__icon-input {
+  position: absolute;
+  left: 12px;
+  transition: fill 250ms $function-time;
+}
+
+// .client-info__input-txt:focus ~ .client-info__icon-input {
+//   fill: $color-accent;
+// }
+
+.client-info__input-txt {
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms $function-time;
+
+  &:focus {
+    border-color: $color-accent;
+    outline: none;
+  }
+}
+
+.client-info__comment {
+  resize: none;
+  margin-bottom: 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  &:focus {
+    border-color: $color-accent;
+    outline: none;
+  }
+}
+
+.client-info__icon-check {
+  position: absolute;
+  margin-left: -24px;
+
+  width: 1em;
+  height: 1em;
+
+  fill: $color-white;
+  stroke: $color-black;
+  stroke-width: 1px;
+}
+
+.client-info__agree {
+  display: flex;
+  align-items: center;
+
+  padding-left: 32px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.client-agree {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+
+  &:checked {
+    background-color: $color-accent;
+  }
+}
+
+.client-info__icon-check {
+  .client-agree:focus + & {
+    stroke: $color-black;
+    stroke-linejoin: round;
+    stroke-width: 5px;
+  }
+
+  .client-agree:checked + & {
+    stroke: none;
+    fill: $color-accent;
+  }
+}
+
+.client-info__deal {
+  margin-left: 2px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+
+  color: $color-accent;
+}
