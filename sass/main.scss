@@ -25,18 +25,11 @@
 
 @import './components/hero';
 @import './components/featers';
-// @import './components/business';
+@import './components/business';
 @import './components/team';
 @import './components/clients';
 
 /* ----------------- page portfolio */
-// @import './components/navigation-bar';
-// @import './components/portfolio';
+@import './components/navigation-bar';
+@import './components/portfolio';
 
-// -----------------------
-//  480px, 768px и 1200px
-// @media screen and (min-width: 480px) {
-//   .page-header {
-//     height: 60px;
-//   }
-// }

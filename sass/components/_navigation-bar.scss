@@ -1,7 +1,10 @@
 .navigation-bar {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // width: 100%;
+  justify-content:flex-start;
+flex-wrap: wrap;
+
+  margin-bottom: 40px;
 }
 
 .navigation-bar__item:not(:last-child) {
