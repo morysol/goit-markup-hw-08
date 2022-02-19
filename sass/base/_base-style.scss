@@ -30,14 +30,24 @@ img {
 }
 
 .container {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    outline: 1px solid red;
-  }
-  // width: 480px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin: 0 auto;
   padding: 60px 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    outline: 1px solid red;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    outline: 1px dotted cyan;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    outline: 1px double yellow;
+  }
 }
 
 .container__page-header {
@@ -49,7 +59,7 @@ img {
 }
 
 .container__hero {
-  margin: 0 auto;
+  // margin: 0 auto;
   // text-align: center;
   padding: 118px 0;
 }

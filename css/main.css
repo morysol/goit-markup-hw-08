@@ -69,8 +69,6 @@ img {
 }
 
 .container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0 auto;
   padding: 60px 15px;
 }
@@ -79,6 +77,20 @@ img {
   .container {
     width: 480px;
     outline: 1px solid red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    outline: 1px dotted cyan;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    outline: 1px double yellow;
   }
 }
 
@@ -94,7 +106,6 @@ img {
 }
 
 .container__hero {
-  margin: 0 auto;
   padding: 118px 0;
 }
 
