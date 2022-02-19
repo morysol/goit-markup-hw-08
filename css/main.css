@@ -395,8 +395,8 @@ body {
 
 .clients__item {
   height: 92px;
-  -ms-flex-preferred-size: calc((480px - 60px) / 2);
-      flex-basis: calc((480px - 60px) / 2);
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
   margin: 15px;
 }
 
