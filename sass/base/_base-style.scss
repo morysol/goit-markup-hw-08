@@ -10,8 +10,10 @@ img {
   &--bg-dark {
     background-color: $color-button-light;
   }
+}
 
-  &--hidden {
+.section--hidden {
+  @media screen and (max-width: $pre-desktop) {
     display: none;
   }
 }

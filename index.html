@@ -457,5 +457,76 @@
         </div>
       </div>
     </footer>
+    <div id="backdrop" class="backdrop is-hidden" data-modal>
+      <div class="modal-container">
+        <button class="modal-container__close-button" data-modal-close>
+          <svg class="modal-container__close-icon" width="11" height="11">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+
+        <form class="client-info">
+          <h2 class="client-info__title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <label for="client-name" class="client-info__label">Имя</label>
+          <div class="input-field">
+            <input type="text" name="client-name" id="client-name" class="client-info__input-txt" />
+            <svg class="client-info__icon-input" width="18" height="18">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
+
+          <label for="client-tel" class="client-info__label">Телефон</label>
+          <div class="input-field">
+            <input type="tel" name="client-tel" id="client-tel" class="client-info__input-txt" />
+            <svg class="client-info__icon-input" width="18" height="18">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+
+          <label for="client-email" class="client-info__label">Почта</label>
+          <div class="input-field">
+            <input
+              type="email"
+              name="client-email"
+              id="client-email"
+              class="client-info__input-txt"
+            />
+            <svg class="client-info__icon-input" width="18" height="18">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+
+          <label for="client-info__comment" class="client-info__label">Комментарий</label>
+          <textarea
+            name="client-info__comment"
+            id="client-info__comment"
+            rows="6"
+            placeholder="Введите текст"
+            class="client-info__comment"
+          ></textarea>
+          <div class="agree-container">
+            <label class="client-info__agree">
+              <input
+                type="checkbox"
+                name="client-agree"
+                value="client-agree"
+                id="client-agree"
+                class="client-agree"
+              />
+              <span class="client-info__icon-check">
+                <svg width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="client-info__deal">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="button button__submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
