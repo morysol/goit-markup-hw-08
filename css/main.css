@@ -48,7 +48,11 @@ img {
   background-color: #f5f4fa;
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 1199px) {
+=======
+@media screen and (max-width: 767px) {
+>>>>>>> Stashed changes
   .section--hidden {
     display: none;
   }
