@@ -42,12 +42,12 @@ img {
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    outline: 1px dotted cyan;
+    outline: 1px dotted green;
   }
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    outline: 1px double yellow;
+    outline: 1px double blue;
   }
 }
 
