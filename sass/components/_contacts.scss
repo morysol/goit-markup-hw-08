@@ -1,27 +1,30 @@
 .envelope-icon {
   fill: currentColor;
   margin-right: 10px;
-  // margin-left: auto;
 }
 
 /*  tel, email  */
 .contacts-list {
+  // note: aligning contacts only
+  align-self: center;
+
   display: block;
   align-items: center;
-  .contacts-list__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  // margin-right: auto;
-
+  margin-left: 84px;
   @media screen and (min-width: $desktop) {
     display: flex;
-    margin-left: auto;
+    margin-left: 305px;
+  }
+}
 
-    .contacts-list__item {
-      &:not(:last-child) {
-        margin-right: 50px;
-        margin-bottom: 0;
-      }
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }

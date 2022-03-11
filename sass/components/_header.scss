@@ -4,16 +4,16 @@
 
 .container__page-header {
   display: flex;
-  // width: 100%;
-  // justify-content: space-between;
   align-items: center;
 
-  padding: 10px 10px 10px 15px;
+  padding: 0 15px;
   height: 60px;
 }
 
 .page-header__nav {
   display: flex;
+  height: 100%;
+
   @media screen and (max-width: $pre-tablet) {
     display: none;
   }

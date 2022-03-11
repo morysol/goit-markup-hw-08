@@ -26,19 +26,23 @@
     transition: background-color 250ms $function-time;
   }
 
-  //   &:hover,
-  //   &:focus {
-  //     color: $color-white;
-  //     background-color: $color-accent;
-  //   }
-}
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+  }
 
-.social-list__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+  .social-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 
-  //   .social-list__link & {
-  //     fill: $color-white;
-  //   }
+    @media screen and (min-width: $desktop) {
+      .social-list__link & {
+        fill: $color-white;
+      }
+    }
+  }
 }
