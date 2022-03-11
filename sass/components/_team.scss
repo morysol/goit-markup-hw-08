@@ -25,6 +25,19 @@
     }
   }
 }
+
+.team__photo {
+  width: 450px;
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    // srcset="./images/team-1-480w-450px.jpg 1x, ./images/team-1-480w-450px-2x.jpg 2x"
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
 .team__card {
   @media screen and (min-width: $mobile) {
     width: 450px;
