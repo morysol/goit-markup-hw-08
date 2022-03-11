@@ -5,13 +5,20 @@
 
 /*  tel, email  */
 .contacts-list {
-  display: flex;
+  display: block;
   align-items: center;
-  margin-left: auto;
+  // margin-right: auto;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-list__link {

@@ -1,6 +1,12 @@
+:root {
+  --gradient: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
 .hero {
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-bg.jpg');
+  background-image: var(--gradient), url('../images/hero-bg.jpg');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: var(--gradient), url('../images/hero-bg-2x.jpg');
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,7 +14,7 @@
 
 // hero__header
 .hero__header {
-  width: 360px;
+  // width: 360px;
 
   margin-left: auto;
   margin-right: auto;
