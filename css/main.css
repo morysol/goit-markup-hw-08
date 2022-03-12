@@ -1118,35 +1118,39 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    margin: 0;
   }
 }
 
 .team__item {
-  width: 450px;
+  max-width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .team__item {
-    width: 354px;
-  }
-  .team__item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .team__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    max-width: 354px;
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 270px;
-    margin-bottom: 0;
+    max-width: 270px;
+    margin: 0;
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -1277,7 +1281,16 @@ body {
 }
 
 .portfolio__card {
-  /* remove margin bottom from last line - 3 elements */
+  max-width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__card {
+    /* remove margin bottom from last line - 3 elements */
+  }
+  .portfolio__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio__link {
@@ -1293,13 +1306,6 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  opacity: 0;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__link::after:hover::after, .portfolio__link::after:focus::after {
@@ -1311,6 +1317,12 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.portfolio__link:hover .portfolio__card-bottom,
+.portfolio__link:focus .portfolio__card-bottom {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__title {
@@ -1331,7 +1343,6 @@ body {
 /* ------- portfolio anime ---------*/
 .portfolio__thumb {
   position: relative;
-  width: 370px;
   overflow: hidden;
 }
 
