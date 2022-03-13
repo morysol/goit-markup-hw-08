@@ -1295,10 +1295,6 @@ body {
 @media screen and (min-width: 1200px) {
   .portfolio__card {
     max-width: 370px;
-    margin: 0;
-  }
-  .portfolio__card:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
