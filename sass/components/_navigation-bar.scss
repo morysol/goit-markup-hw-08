@@ -1,10 +1,16 @@
 .navigation-bar {
   display: flex;
-  // width: 100%;
-  justify-content:flex-start;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 
+  justify-content: flex-start;
   margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .navigation-bar__item:not(:last-child) {

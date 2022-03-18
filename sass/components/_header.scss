@@ -1,18 +1,27 @@
 .page-header {
   position: relative;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .container__page-header {
+  height: 60px;
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
   display: flex;
   align-items: center;
 
   padding: 0 15px;
-  height: 60px;
 }
 
 .page-header__nav {
   display: flex;
   height: 100%;
+  margin-left: 88px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 
   @media screen and (max-width: $pre-tablet) {
     display: none;
@@ -55,16 +64,13 @@
     pointer-events: none;
   }
 
-  // position: absolute;
-  position: fixed;
+  position: absolute;
+  // position: fixed;
 
   top: 0;
   left: 0;
-  padding-top: 48px;
-  padding-left: 40px;
-  // padding-right: 10px;
+  padding: 48px 40px;
 
-  // width: 100%;
   width: 100vw;
   height: 100vh;
 

@@ -2,6 +2,13 @@
   --gradient: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 .hero {
+  padding: 118px 0px;
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0px;
+  }
+
+  background-size: cover;
+
   background-image: var(--gradient), url('../images/hero-bg-480.jpg');
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -25,6 +32,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+.container__hero {
+  margin: auto;
+  @media screen and (min-width: $mobile) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
   }
 }
 

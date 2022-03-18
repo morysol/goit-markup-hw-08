@@ -5,6 +5,11 @@ img {
 }
 
 .section {
+  padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+
   background-color: $color-white;
 
   &--bg-dark {
@@ -22,39 +27,38 @@ img {
   margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
 
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $color-dark;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .container {
   margin: 0 auto;
-  padding: 60px 15px;
+  padding: 0 15px;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    outline: 1px dotted green;
+    // outline: 1px dotted green;
   }
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    outline: 1px double blue;
+    // outline: 1px double blue;
   }
-}
-
-.container__hero {
-  // margin: 0 auto;
-  // text-align: center;
-  padding: 118px 60px;
 }
 
 body {

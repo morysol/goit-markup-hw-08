@@ -1,12 +1,11 @@
 .footer {
   background-color: $color-background-dark;
-  text-align: center;
-  @media screen and (min-width: $tablet) {
-    text-align: left;
-  }
+  //  text-align: center;
 }
 
 .container__footer {
+  text-align: center;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -15,16 +14,28 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: left;
+    text-align: left;
   }
 }
 
 .panel-contacts {
-  margin-bottom: 60px;
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .panel-social {
-  margin-bottom: 60px;
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .panel-social__title {
@@ -39,6 +50,10 @@
 }
 
 .panel-form {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    margin-top: 60px;
+  }
+
   display: flex;
   flex-direction: column;
   flex-grow: 1;
