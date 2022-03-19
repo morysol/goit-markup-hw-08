@@ -20,7 +20,9 @@
 }
 
 .modal-container {
-  padding: 40px 15px;
+  // position: absolute;
+  position: relative;
+  padding: 40px;
   margin: 0 auto;
 
   max-width: 450px;
@@ -53,13 +55,15 @@
 
 // see _buttons.scss
 .modal-container__close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  // @media screen and (min-width: $desktop) { }
   position: absolute;
   top: 8px;
   right: 8px;
+
+  display: block;
+  margin-left: auto;
+  // justify-content: center;
+  // align-items: center;
 
   padding: 0;
   width: 30px;
