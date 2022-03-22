@@ -18,6 +18,7 @@ img {
 }
 
 .section--hidden {
+  padding-top: 0;
   @media screen and (max-width: $pre-desktop) {
     display: none;
   }

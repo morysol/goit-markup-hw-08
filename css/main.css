@@ -318,6 +318,10 @@ img {
   background-color: #f5f4fa;
 }
 
+.section--hidden {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .section--hidden {
     display: none;
@@ -766,6 +770,7 @@ body {
 }
 
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -773,7 +778,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -782,6 +787,9 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -796,6 +804,9 @@ body {
         -ms-flex-pack: left;
             justify-content: left;
     text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -807,6 +818,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .panel-contacts {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin-right: 70px;
   }
 }
@@ -991,9 +1005,7 @@ body {
 
 .backdrop {
   position: fixed;
-  padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1251,7 +1263,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding: 200px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1323,8 +1338,10 @@ body {
   }
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1522,8 +1539,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px * 6) / 6);
-        flex-basis: calc((100% - 30px * 6) / 6);
+    -ms-flex-preferred-size: calc((100% - 30px * 5) / 6);
+        flex-basis: calc((100% - 30px * 5) / 6);
     margin: 0;
   }
   .clients__item:not(:last-child) {
@@ -1570,6 +1587,12 @@ body {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation-bar {
+    margin-top: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation-bar {
     -webkit-box-pack: center;
@@ -1582,6 +1605,12 @@ body {
 @media screen and (min-width: 1200px) {
   .navigation-bar {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-bar__item {
+    margin-top: 15px;
   }
 }
 

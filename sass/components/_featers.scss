@@ -7,8 +7,10 @@
 }
 
 .features__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: $pre-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   // @media screen and (min-width: $mobile) {

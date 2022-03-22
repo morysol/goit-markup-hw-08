@@ -1,21 +1,23 @@
 .footer {
+  padding: 60px 0;
   background-color: $color-background-dark;
-  //  text-align: center;
 }
 
 .container__footer {
   text-align: center;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
     text-align: left;
+    align-items: baseline;
   }
 }
 
@@ -24,6 +26,7 @@
     margin-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
+    flex-grow: 1;
     margin-right: 70px;
   }
 }
